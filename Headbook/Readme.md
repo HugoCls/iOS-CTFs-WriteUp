@@ -35,6 +35,7 @@ Flag 1: flag-EC840814-CEBA-4731-8620-CB991D850B14
 
 To reverse our binary we can use Ghidra for exemple
 
+![img1](images/img1.png)
 
 And we can look for every strings in the resulted Swift code. For this we can either use Ghidra tool to do so or directly strings command on MacOS Terminal.
 
@@ -42,20 +43,20 @@ And we can look for every strings in the resulted Swift code. For this we can ei
 strings Headbook > strings.txt
 grep -C 1 “flag” strings.txt
 ```
-
+![img2](images/img2.png)
 
 We see 4 occurrences of the word flag in our strings and two of them looks suspicious: _BD570736 seems to be a flag, also %@-%@-%@-%@-%@-%@- seems to be one but let’s make sure about the format.
 
 We can either use Ghidra now or add more context (-C 5 for exemple) to understand better the behaviors of the word flag in our binary.
 
 Walking in our file with Ghidra strings brings us to this:
-
+![img3](images/img3.png)
 We will consider this to be the second flag.
 
 Flag 2: flag-BD570736-D304-400A-A6B7
 
 In the same way, I used strings function in Ghidra to find this sequence: %@- and clicked on it to jump to its location in the binary file. We find this out:
-
+![img4](images/img4.png)
 
 In the same way we got a flag:
 
@@ -73,8 +74,8 @@ After installing acextract, and decompiling Assets.car with
 
 We obtain a folder with the assets and bingo, we have an image named flag, after obtaining it we have the 3rd flag
 
-
-
+![img5](images/img5.png)
+![img6](images/img6.png)
 
 
 Flag 4: flag-2F110A91-4BAC-4A18-A680-A6C2987CC2C4
@@ -83,7 +84,7 @@ After searching through files, it comes evident to watch out for the Main files 
 
 Using strings on all files results to getting this result on one (BYZ-38.. .nib)
 
-
+![img7](images/img7.png)
 We found one more flag.
 
 Update: I recorded another version using ibtool.py an opensource tool to work with .nib files.
