@@ -50,12 +50,15 @@ We see 4 occurrences of the word flag in our strings and two of them looks suspi
 We can either use Ghidra now or add more context (-C 5 for exemple) to understand better the behaviors of the word flag in our binary.
 
 Walking in our file with Ghidra strings brings us to this:
+
 ![img3](images/img3.png)
+
 We will consider this to be the second flag.
 
 Flag 2: flag-BD570736-D304-400A-A6B7
 
 In the same way, I used strings function in Ghidra to find this sequence: %@- and clicked on it to jump to its location in the binary file. We find this out:
+
 ![img4](images/img4.png)
 
 In the same way we got a flag:
@@ -75,6 +78,7 @@ After installing acextract, and decompiling Assets.car with
 We obtain a folder with the assets and bingo, we have an image named flag, after obtaining it we have the 3rd flag
 
 ![img5](images/img5.png)
+
 ![img6](images/img6.png)
 
 
@@ -85,6 +89,7 @@ After searching through files, it comes evident to watch out for the Main files 
 Using strings on all files results to getting this result on one (BYZ-38.. .nib)
 
 ![img7](images/img7.png)
+
 We found one more flag.
 
 Update: I recorded another version using ibtool.py an opensource tool to work with .nib files.

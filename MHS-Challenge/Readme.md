@@ -22,6 +22,7 @@ Then, using ls we see a strange file named “Look me inside”
 ```
 nano Look\ me\ inside
 ```
+
 ![img1](images/img1.png)
 
 
@@ -30,12 +31,14 @@ Then when we look at the files using exiftool we find out that there are comment
 ```
 exiftool -r -f superman.jpg
 ```
+
 ![img2](images/img2.png)
 
 After a few research we find this:
 ```
 exiftool -r -f ironman.jpg
 ```
+
 ![img3](images/img3.png)
 
 We found the flag.
