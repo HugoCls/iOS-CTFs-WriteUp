@@ -41,6 +41,16 @@ exiftool -r -f ironman.jpg
 
 ![img3](images/img3.png)
 
-We found the flag.
+We found the flag but still in hex format.
 
-Flag: 546869734973596f757245786966746f6f6c466c61672120
+Hex flag:546869734973596f757245786966746f6f6c466c61672120
+
+Using [CyberChef](https://gchq.github.io/CyberChef/#recipe=From_Hex('Auto')&input=NTQ2ODY5NzM0OTczNTk2Zjc1NzI0NTc4Njk2Njc0NmY2ZjZjNDY2YzYxNjcyMTIw) we find out the real flag from this Hex sequence:
+
+![img4](images/img4.png)
+
+Flag: **ThisIsYourExiftoolFlag!**
+
+## Video
+
+[Walkthrought video of my work](https://youtu.be/n23QO4trh24).

@@ -31,7 +31,7 @@ We get two important informations from this file: Headbook is the main file bina
 
 ```
 
-Flag 1: flag-EC840814-CEBA-4731-8620-CB991D850B14
+Flag 1: **flag-EC840814-CEBA-4731-8620-CB991D850B14**
 
 To reverse our binary we can use Ghidra for exemple
 
@@ -55,7 +55,7 @@ Walking in our file with Ghidra strings brings us to this:
 
 We will consider this to be the second flag.
 
-Flag 2: flag-BD570736-D304-400A-A6B7
+Flag 2: **flag-BD570736-D304-400A-A6B7**
 
 In the same way, I used strings function in Ghidra to find this sequence: %@- and clicked on it to jump to its location in the binary file. We find this out:
 
@@ -63,7 +63,7 @@ In the same way, I used strings function in Ghidra to find this sequence: %@- an
 
 In the same way we got a flag:
 
-Flag 3: flag-9861DA53-C08C-47C4-84D6-B48463AB738A
+Flag 3: **flag-9861DA53-C08C-47C4-84D6-B48463AB738A**
 
 Secondly, I looked at Assets.car which is the compiled file for the graphics assets of the application such as images, etc.
 
@@ -82,7 +82,7 @@ We obtain a folder with the assets and bingo, we have an image named flag, after
 ![img6](images/img6.png)
 
 
-Flag 4: flag-2F110A91-4BAC-4A18-A680-A6C2987CC2C4
+Flag 4: **flag-2F110A91-4BAC-4A18-A680-A6C2987CC2C4**
 
 After searching through files, it comes evident to watch out for the Main files of the app, and indeed we find two folders in which there are .nib files: one for the Launchscreen and one for the Main app.
 
@@ -98,4 +98,8 @@ Update: I recorded another version using ibtool.py an opensource tool to work wi
 
 Once again we find the flag
 
-Flag 5: flag-5932744F-4810-4A6C-BD8F-66FF3E115ED6
+Flag 5: **flag-5932744F-4810-4A6C-BD8F-66FF3E115ED6**
+
+## Video
+
+[Walkthrought video of my work](https://youtu.be/GLyKAv9DVEw).
